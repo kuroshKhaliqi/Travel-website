@@ -4,12 +4,13 @@
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   --txt-color: #5e6282;
+  user-select: none;
 }
 
 body {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   /* height: 100%; */
 
@@ -18,7 +19,6 @@ body {
   justify-content: start;
   align-items: center;
   overflow-y: scroll;
-  background-color: green;
 }
 
 .header {
@@ -140,4 +140,76 @@ body {
   font-size: 17px;
   font-family: sans-serif;
   color: var(--txt-color);
+}
+
+.best-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.5rem;
+  margin-bottom: 9.8rem;
+  gap: 0.8rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 16rem;
+  height: 19rem;
+  padding: 1rem;
+  border-radius: 36px;
+  background-color: white;
+  box-shadow:
+    0 100px 80px rgba(0, 0, 0, 0.02),
+    0 64.81px 46.85px rgba(0, 0, 0, 0.0152),
+    0 38.52px 25.48px rgba(0, 0, 0, 0.0121),
+    0 20px 13px rgba(0, 0, 0, 0.01),
+    0 8.15px 6.52px rgba(0, 0, 0, 0.0079),
+    0 1.85px 3.15px rgba(0, 0, 0, 0.0048);
+  gap: 1rem;
+}
+
+.service-desc {
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 26px;
+  color: #5e6282;
+}
+
+.service-img {
+  display: flex;
+  /* width: 4.8rem; */
+  height: 4.1rem;
+}
+
+.section-title {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #5e6282;
+}
+
+.section-desc {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: rgb(1, 1, 68);
+}
+
+.service-name {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(1, 1, 68);
 }
